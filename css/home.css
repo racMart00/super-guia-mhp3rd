@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    background-attachment: fixed;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    transition: all .4s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/banner-zinogre-large.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(34, 34, 34, 0.50);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 12px rgba(43, 43, 43, 0.902);
+}
+
+nav a {
+    padding: 24px 12px 24px 12px;
+    font-size: 24px;
+}
+
+nav a:hover {
+    color: rgba(39, 39, 39, 0.893);
+    background-color: rgba(255, 255, 255, 0.852);
+    text-shadow: 1px 1px 18px rgb(41, 41, 41);
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+section a {
+    font-size: 36px;
+    margin-top: 20px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(255, 255, 255, 0.573);
+    border-radius: 42px;
+    color: rgb(24, 24, 24);
+    text-shadow: 2px 2px 10px rgb(37, 37, 37);
+}
+
+section a:hover {
+    padding: 10px 18px 10px 18px;
+    color: rgba(255, 255, 255, 0.783);
+    background-color: rgba(24, 24, 24, 0.863);
+    outline: 3px solid rgba(255, 255, 255, 0.783);
+    outline-offset: 2px;
+    text-shadow: 3px 3px 12px rgba(255, 255, 255, 0.783);
+}
+
+/* ARTICLE WRAPER */
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(208, 208, 208, 0.774);
+}
+
+/* ARTICLE WRAPER END*/
+
+/* ARTICLE 1 INTRO */
+
+.intro {
+    display: none;
+}
+
+#intro h1, p {
+    text-align: center;
+    color: rgb(31, 31, 31);
+}
+
+#intro h1 {
+    background-color: rgba(255, 255, 255, 0.881);
+    font-size: 32px;
+    padding: 1.5% 1% 1% 1%;
+    margin: 1.5% 24% .5% 24%;
+    border-radius: 32px;
+    text-shadow: 2px 2px 12px rgba(28, 28, 28, 0.5);
+}
+
+#intro p {
+    background-color: rgba(255, 255, 255, 0.881);
+    font-size: 26px;
+    margin: .5% 2% 2% 2%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 12px;
+    text-shadow: 2px 2px 12px rgba(28, 28, 28, 0.406);
+}
+/* ARTICLE 1 END*/
+
+/* ARTICLE 2 NEW BEAST */
+.newcriat {
+    display: none;
+}
+
+.slider img {
+    width: 42vh;
+}
+
+#newcriat .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.881);
+    margin: 1.5% auto 1.5% auto;
+    border-radius: 12px;
+    text-shadow: 2px 2px 12px rgba(28, 28, 28, 0.406);
+    color: white;
+    height: auto;
+    width: min-content;
+}
+
+.prev {
+    font-size: 26px;
+    padding: 1px;
+    color: rgb(31, 31, 31, 0.881);
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.prev:hover {
+    color: rgb(255, 255, 255, 0.881);
+    background-color: rgb(31, 31, 31, 0.881);
+    border: 1px solid rgb(255, 255, 255, 0.881);
+}
+
+.next {
+    font-size: 26px;
+    padding: 1px;
+    color: rgb(31, 31, 31, 0.881);
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.next:hover {
+    color: rgb(255, 255, 255, 0.881);
+    background-color: rgb(31, 31, 31, 0.881);
+    border: 1px solid rgb(255, 255, 255, 0.881);
+}
+
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+}
+
+.carrousel a {
+    margin: auto;
+}
+
+.carrousel div {
+    text-align: center;
+}
+
+.card {
+    background-attachment: scroll;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    height: 50vh;
+    width: 41vh;
+}
+
+#aoshi {
+    background-image: url("/assets/Aoashira.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#lagom {
+    background-image: url("/assets/MHRise-Lagombi_Render_001.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#gagwa {
+    background-image: url("/assets/Gavua.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#volvi {
+    background-image: url("/assets/MHRise-Render_Volvidon.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#furogi {
+    background-image: url("/assets/MHRise-Great_Wroggi_Render_001.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#slag {
+    background-image: url("/assets/MHRise-Slagtoth_Render_001.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#nibel {
+    background-image: url("/assets/MHGen-Render_Nibelsnarf.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#boros {
+    background-image: url("/assets/MHP3-Render_Duramboros.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#zino {
+    background-image: url("/assets/MH4-Render_Zinogre.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#nargaverde {
+    background-image: url("/assets/MHP3-Render_Nargacuga_Verdoso.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#barrhielo {
+    background-image: url("/assets/barroth_hielo.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#agkhielo {
+    background-image: url("/assets/akghielo.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#qurucarmesi {
+    background-image: url("/assets/Qurupeco.aa3423d.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#bardesertico {
+    background-image: url("/assets/MHP3-Render_Barioth_Arenoso_001.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#tigrexnegro {
+    background-image: url("/assets/MH4-Render_Tigrex_negro.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#ludpurpura {
+    background-image: url("/assets/MHP3-Render_Ludroth_Purpura.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#amatsu {
+    background-image: url("/assets/MHP3-Amatsumagatsuchi.png");
+    margin-top: 5px;
+    padding-bottom: 400px;
+}
+
+#newcriat .desc {
+    position: relative;
+    top: 65%;
+    font-size: large;
+    text-align: center;
+    padding: 1%;
+    color: rgba(255, 255, 255, 0.881);
+    background-color: rgba(81, 81, 81, 0.438);
+    text-shadow: 2px 2px 12px rgb(45, 45, 45);
+    border-radius: 8px;
+}
+/* ARTICLE 2 END */
+
+/* ARTICLE 3 NEW STATS */
+.newstat {
+    display: none;
+}
+
+#newstat h1, p {
+    text-align: center;
+    color: rgb(31, 31, 31);
+}
+
+#newstat h1 {
+    background-color: rgba(255, 255, 255, 0.881);
+    font-size: 32px;
+    padding: 1.5% 1% 1% 1%;
+    margin: 1.5% 24% .5% 24%;
+    border-radius: 32px;
+    text-shadow: 2px 2px 12px rgba(28, 28, 28, 0.5);
+}
+
+#newstat p {
+    background-color: rgba(255, 255, 255, 0.881);
+    font-size: 26px;
+    margin: .5% 2% 2% 2%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 12px;
+    text-shadow: 2px 2px 12px rgba(28, 28, 28, 0.406);
+}
+/* ARTICLE 3 END */
+
+/* GO TOP */
+.gotop {
+    position: fixed;
+    text-align: center;
+    line-height: 44px;
+    background-color: rgba(8, 98, 176, 0.477);
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 32px;
+    transition: .2s;
+}
+
+.gotop:hover {
+    background-color: rgba(8, 98, 176, 0.87);
+    outline: 3px solid rgba(8, 98, 176, 0.87);
+    outline-offset: 2px;
+    text-shadow: 3px 3px 12px rgba(37, 37, 37, 0.932);
+}
+
+.show {
+    visibility: hidden;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(8, 98, 176, 0.34);
+}
+/* GO TOP END*/
+
+.hidden {
+    display: none;
+}
